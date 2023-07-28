@@ -1,0 +1,183 @@
+.footer {
+    background-color: #0b061b;
+    color: #fff;
+    padding: 50px;
+
+   .footer_logo{
+    .logo {
+        color: #fc1312;
+        font-size: 2.5rem;
+        line-height: 0.6;
+        font-weight: 700;
+        margin-left: -13px;
+        padding: 10px;
+        text-shadow: 0px 2px 0px #605656;
+        font-family: "Audiowide", sans-serif;
+
+        .span1 {
+            color: #fff;
+        }
+
+        .span2 {
+            color: #fff;
+            margin-left: 57px;
+        }
+
+        .span3 {
+            font-size: 16px;
+            // margin-left: 57px;
+        }
+    }
+    p{
+        width: 70%;
+
+        @media screen and (max-width:1200px){
+            width: 100%;
+        }
+    }
+   }
+    
+    .useful_links {
+        margin-left: 60px;
+        
+        ul {
+            h4 {
+                font-family: 'Ubuntu', sans-serif;
+                margin-left: 5px;
+                margin-bottom: 20px;
+                color: #fff;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    background-color: #9d1bed;
+                    height: 3px;
+                    top: 130%;
+                    left: 0px;
+                    width: 70px;
+                }
+            }
+
+            li {
+                list-style: none;
+                line-height: 2;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 15px;
+                    transition: 0.5s ease-in;
+
+                    &:hover {
+                        color: #9d1bed;
+                        padding-left: 6px;
+                        transition: 0.5s ease-in;
+                    }
+                }
+
+                svg {
+                    font-size: 20px;
+                    margin-top: -3px;
+                }
+            }
+        }
+        @media screen and (max-width:767px){
+            margin-left: 0px; 
+        }
+    }
+
+    .opening_hours {
+        margin-left: 60px;
+        
+        ul {
+            h4 {
+                font-family: 'Ubuntu', sans-serif;
+                margin-left: 5px;
+                margin-bottom: 20px;
+                color: #fff;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    background-color: #9d1bed;
+                    height: 3px;
+                    top: 130%;
+                    left: 0px;
+                    width: 70px;
+                }
+            }
+
+            li {
+                list-style: none;
+                line-height: 2;
+                margin-left: 6px;
+
+                svg {
+                    font-size: 20px;
+                    margin-top: -3px;
+                }
+            }
+        }
+        @media screen and (max-width:767px){
+            margin-left: 0px; 
+        }
+    }
+
+    .social_links {
+        margin-left: 60px;
+        ul {
+            display: flex;
+            gap: 15px;
+            margin-left: 2px;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: #fff;
+                    padding: 6px 9px;
+
+                    &:hover {
+                        background: #5900cd;
+                        padding: 6px 9px;
+                        border-radius: 50%;
+                            svg{
+                                margin-top: -4px;
+                            }
+                      
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:767px){
+            margin-left: 0px; 
+        }
+    }
+
+}
+.bottom_footer{
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+    background-color:#0c0b26;
+    font-size: 14px;
+    
+     p{
+        margin-bottom: 0rem;
+     }
+}
+
+@media (min-width:768px) and (max-width:1200px){
+    .footer{
+        .useful_links{
+            margin-left: 3px;
+        }
+        .opening_hours{
+            margin-left: 3px;
+        }
+        .social_links{
+            margin-left: 0px;
+        }
+    }
+}
+

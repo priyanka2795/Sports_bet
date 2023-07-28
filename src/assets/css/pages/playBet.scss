@@ -1,0 +1,147 @@
+.playBet_section {
+    // background-color: #09316b;
+    background-color: #000000;
+    // background-image: url("../../images/bg.png");
+    // background-position: center;
+    padding: 50px 50px;
+    color: #fff;
+
+    .img_div {
+        margin: 10px 0px 15px 0px;
+
+        img {
+            width: 500px;
+         }
+    }
+
+    .img_div2 {
+        display: flex;
+
+        @media screen and (max-width:1200px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 305px;
+            border-radius: 10px;
+            margin: 0px 8px;
+
+            @media screen and (max-width:767px) {
+                width: 265px;
+                margin: 10px 0px;
+            }
+        }
+
+    }
+
+    .content {
+        margin-left: 50px;
+
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+            padding: 0px 50px 0px 0px;
+
+            strong {
+                color: #df10b5f2;
+                font-size: 19px;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 2.6rem;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-family: 'Ubuntu', sans-serif;
+                text-shadow: 2px 2px 2px rgb(195 15 243 / 90%);
+                line-height: 1.7;
+                margin-bottom: 20px;
+
+            }
+
+
+        }
+
+        .play_btn {
+            margin: 60px 0px;
+
+            a {
+                color: #fff;
+                background: linear-gradient(to bottom, #9d1bed 0%, #570dc8 100%);
+                text-shadow: -1px 4px 0px #9d1bed61;
+                border: 3px;
+                // margin: 75px auto;
+                padding: 10px 100px;
+                // display: flex;
+                // justify-content: center;
+                width: 100%;
+                // max-width: 60%;
+                font-size: 22px;
+                font-weight: 700;
+                border-radius: 4px;
+                text-transform: uppercase;
+                text-decoration: none;
+                position: relative;
+                box-shadow: 0px 6px 0px 0px rgb(58 0 144);
+
+                animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+
+                &:hover {
+                    background: linear-gradient(to bottom, #ff39dc 0%, #a60084 100%);
+                    color: #fff;
+                    // transition: 0.3s ease-in;
+                    box-shadow: 0px 6px 0px 0px rgb(102 19 85);
+                }
+
+                @keyframes pulse {
+                    to {
+                        box-shadow: 0 0 0 17px rgba(232, 76, 61, 0);
+                    }
+                }
+
+                @media screen and (max-width:767px) {
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .playBet_section {
+        padding: 40px 10px;
+    }
+
+    .content {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .playBet_section {
+        padding: 0px 0px;
+
+        .content {
+            margin-left: 0px;
+
+            p {
+                padding: 0px;
+
+                span {
+                    font-size: 1.8rem;
+                    line-height: 1.4;
+                }
+            }
+
+            .play_btn {
+                a {
+                    padding: 10px 81px;
+                }
+            }
+        }
+    }
+}

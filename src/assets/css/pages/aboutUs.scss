@@ -1,0 +1,172 @@
+.about_section {
+    width: 100%;
+    // background-image:  url("https://demos.codexcoder.com/themeforest/html/casina/casina/assets/images/pageheader/bg.jpg");
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/casino.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 0px;
+
+    .title {
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Ubuntu", sans-serif;
+
+        span {
+            color: #ffc400;
+        }
+    }
+
+    .para {
+        color: #fff;
+        margin-top: 15px;
+    }
+}
+
+.about_banner{
+    background-color: #030043;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/bg.png");
+    background-position: center;
+    padding: 100px 0px;
+    .about_content {
+        padding: 50px 0px;
+        color: #fff;
+    
+        .img1 {
+            img {
+                width: 97%;
+                height: 300px;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }
+        }
+    
+        .img2 {
+            img {
+                width: 300px;
+                height: 200px;
+                margin: 0px 5px;
+                border-radius: 20px;
+            }
+        }
+    
+        .about_box {
+            .head {
+                color: #ffc400;
+                font-size: 18px;
+                padding: 10px 0px;
+            }
+    
+            h3 {
+                text-transform: uppercase;
+                line-height: 1.5;
+                font-family: "Ubuntu", sans-serif;
+            }
+    
+            .para {
+                line-height: 1.7;
+            }
+    
+            .about_btn {
+                margin-top: 30px;
+                .play_btn {
+                    background-color: #ffc400;
+                    color: #fff;
+                    font-size: 17px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    border: none;
+                    margin-top: 30px;
+                    padding: 10px 40px;
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    transition: 0.3s ease-in;
+                    box-shadow: -4.828px -4.828px 12px 0px rgb(255 200 39 / 40%), 3px 5px 15px 0px rgb(255 82 1 / 20%);
+    
+                    &:hover {
+                        background-color: #fff;
+                        color: #ffc400;
+                        transition: 0.3s ease-in;
+                    }
+                }
+            }
+        }
+    }
+    
+    .why_choose_section {
+        // background-color: #0d0517;
+        padding: 100px 0px;
+        color: #fff;
+    
+        .left {
+            .head {
+                font-size: 2.5rem;
+                text-transform: capitalize;
+                line-height: 1.2;
+                margin-bottom: 11px;
+                font-family: "Ubuntu", sans-serif;
+            }
+    
+            .para {
+                font-size: 17px;
+                margin-bottom: 15px;
+                width: 80%;
+                line-height: 1.7;
+                color: #ccc;
+            }
+        }
+    
+        .right {
+            .box1 {
+                margin-bottom: 50px;
+                .icon{
+                    width: 60px;
+                    height: 60px;
+                    // border: 6px solid orange;
+                    // border-radius: 50%;
+                    // background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+                    // box-shadow: -4.828px -4.828px 12px 0px rgb(255 200 39 / 40%), 3px 5px 15px 0px rgb(255 82 1 / 20%);
+                    border: 6px solid #841bc5;
+                    border-radius: 50%;
+                    background: linear-gradient(0deg, rgb(77 24 157) 40%, rgb(195 15 243 / 90%) 110%);
+                    box-shadow: -4.828px -4.828px 12px 0px rgb(195 15 243 / 46%), 3px 5px 15px 0px rgb(28 1 255 / 20%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 7px;
+                        &:hover{
+                            animation: rotateY-anim 1s linear;
+                            @keyframes rotateY-anim {
+                                0% {
+                                    transform: rotateY(0deg);
+                                }
+                            
+                                100% {
+                                    transform: rotateY(360deg);
+                                }
+                            }
+                        }
+                        svg{
+                            font-size: 1.5rem;
+                            color: #dee2e6;
+                        }
+
+                    
+                }
+                .head {
+                    margin-bottom: 7px;
+                    font-size: 26px;
+                    font-family: "Ubuntu", sans-serif;
+                }
+                .para{
+                    color: rgba(255, 255, 255, 0.8);
+                    line-height: 1.7;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

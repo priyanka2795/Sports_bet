@@ -1,0 +1,54 @@
+@import url('./common/header.scss');
+
+@import url('./pages/hero.scss');
+@import url('./pages/introduction.scss');
+@import url('./pages/account.scss');
+@import url('./pages/bonusPromotion.scss');
+@import url('./pages/bet.scss');
+@import url('./pages/bettypes.scss');
+@import url('./pages/casino.scss');
+@import url('./pages/games.scss');
+@import url('./pages/sports.scss');
+@import url('./pages/playBet.scss');
+@import url('./pages//faq.scss');
+@import url('./pages/generalInfo.scss');
+@import url('./pages/aboutUs.scss');
+@import url('./pages/contactUs.scss');
+@import url('./pages/winSection.scss');
+@import url('./pages/features.scss');
+
+@import url('./common/footer.scss');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@200&family=Kanit:wght@300&family=Lexend&family=Lora:ital@1&family=Nunito&family=Satisfy&family=Source+Code+Pro:ital,wght@1,300&family=Ubuntu:ital,wght@0,300;0,500;1,400&display=swap');
+body {
+    background-color: #000 !important;
+}
+
+.scroll_btn{
+    svg{
+    margin-left: -42px;
+    // background: #6510cf;
+    background: linear-gradient(to bottom, #9d1bed 0%, #570dc8 100%);
+    color: #fff;
+    border-radius: 50%;
+    width: 42px;
+    height: 40px;
+    padding: 10px;
+    box-shadow: 0px 0px 7px 0px rgb(230 227 23);
+    animation: float 6s ease-in-out infinite;
+        &:hover{
+            background: linear-gradient(to bottom, #ff39dc 0%, #a60084 100%);
+        }
+    }
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+}

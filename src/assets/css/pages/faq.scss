@@ -1,0 +1,100 @@
+.faq_section {
+    width: 100%;
+    height: auto;
+    background-image: url("../../images/faq-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #030043;
+   
+    padding-top: 55px;
+    .faq_content {
+        .faq_para{
+            color: #fff;
+            padding: 0px 50px;
+            text-align: center;
+        }
+        .faq_title {
+            text-align: center;
+            font-size:2.6rem;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-family: 'Ubuntu', sans-serif;
+            text-shadow: 2px 2px 2px rgb(195 15 243 / 90%);
+        }
+
+        .accordion {
+            margin-top: 25px;
+            .accordion-item {
+                margin: 15px 0px;
+                border-radius: 0px;
+                border: none;
+
+                .accordion-header {
+                    .left_border {
+                        height: 55px;
+                        width: 7px;
+                        background-color: #ffc400;
+                    }
+
+                    span {
+                        padding-left: 15px;
+                    }
+
+                    .accordion-button {
+                        border-radius: 0px;
+                        background: #21156E;
+                        color: #fff;
+                        box-shadow: 0px 0px 5px 0px #010306a8;
+                        font-weight: 500;
+                        padding: 0px 15px 0px 0px;
+
+                        &::after {
+                            background-image: url("../../images/arrow.png");
+                        }
+                    }
+                }
+                .accordion-collapse{
+                    background: #23176c;
+    color: #fff;
+                }
+            }
+        }
+        .nav-pills{
+            margin-top: 25px;
+            .nav-item{
+                border: 1px solid #ffc400;
+                margin-top: 15px;
+                border-radius: 10px;
+                    .nav-link{
+                        color: #fff;
+                        font-weight: 500;
+                    }
+            }
+        }
+    }
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #5900cd !important;
+    border-radius: 10px;
+   
+   
+   
+}
+
+@media screen and (max-width:767px){
+    .faq_section{
+        .faq_content{
+            .faq_para{
+                padding: 0px 10px;
+            }
+            .faq_title{
+                font-size: 1.8rem;
+                line-height: 1.4;
+            }
+        }
+           
+    }
+}

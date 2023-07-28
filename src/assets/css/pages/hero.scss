@@ -1,0 +1,118 @@
+.hero_section {
+    width: 100%;
+
+    // background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/fantacy10.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // @media screen and (max-width:767px){
+    //     background-position: center;
+    // }
+    .hero_slide{
+        img{
+            width: 100%;
+            height: 75vh;
+        }
+    }
+    .carousel-inner {
+        // img{
+        //     height: 90vh;
+        // }
+
+        .carousel-caption {
+            position: absolute;
+            right: 15%;
+            top: 10% !important;
+            left: 0% !important;
+
+            .hero_content {
+                // margin-top: 100px;
+                padding: 50px 100px 350px 100px;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+
+                @media screen and (max-width:767px) {
+                    padding: 0px;
+                }
+
+                .offer {
+                    text-transform: uppercase;
+                    color: #fff;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                    font-size: 35px;
+                    // background: #9d1bed;
+                    width: 100px;
+                    // box-shadow: 0px 0px 10px 2px #f7faff;
+                    padding: 4px 10px;
+                    text-shadow: 0 0 5px #dc3545, 0 0 10px #9d1bed, 0 0 15px #cc2e55, 0 0 20px rgb(195 15 243 / 90%);
+                    animation: flash linear 1.5s infinite;
+
+                    @keyframes flash {
+                        0% {
+                            opacity: 1;
+                        }
+
+                        50% {
+                            opacity: .1;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+
+                }
+
+                .hero_title {
+                    text-align: left;
+                    color: #fff;
+                    font-size: 5rem;
+                    margin-top: 15px;
+                    line-height: 1.3;
+                    font-weight: 700;
+                    font-family: 'Ubuntu', sans-serif;
+                    text-shadow: 2px 2px 2px rgb(195 15 243 / 90%);
+
+                    @media screen and (max-width:767px) {
+                        font-size: 2rem;
+                    }
+                }
+
+                .hero_subTitle {
+                    color: #fff;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    font-weight: 600;
+                    text-align: left;
+                }
+            }
+        }
+
+    }
+
+
+
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: none !important;
+    background-image: none !important;
+}
+
+.carousel-indicators button {
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .hero_section {
+       .hero_slide{
+            img{
+                width: 100%;
+                height: 30vh;
+            }
+        }
+    } 
+}

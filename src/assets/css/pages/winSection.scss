@@ -1,0 +1,86 @@
+.win_section {
+    width: 100%;
+    background: #161516;
+    padding: 40px 0px;
+    // padding: 100px 50px;
+    // background-image: url("http://ingenioushubs.com/Gambling/demo/images/banner-background.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: right;
+    // background-attachment: fixed;
+    // background-position: center;
+        .win_img{
+            img{
+                width: 580px;
+                animation: zoom-in-zoom-out 7s ease-out infinite;
+            }
+            @keyframes zoom-in-zoom-out {
+                0% {
+                  transform: scale(1, 1);
+                }
+                50% {
+                  transform: scale(1.1, 1.1);
+                }
+                100% {
+                  transform: scale(1, 1);
+                }
+              }
+        }
+
+    .win_content {
+        padding: 100px 0px;
+        @media screen and (max-width:767px){
+            padding: 30px 10px; 
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 2.6rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-family: "Ubuntu", sans-serif;
+            text-shadow: 2px 2px 2px rgb(195 15 243 / 90%);
+            width: 90%;
+            margin-bottom: 20px;
+        }
+
+        .para1 {
+            color: #fff;
+            width: 85%;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .para2 {
+            color: #fff;
+            width: 85%;
+            font-size: 17px;
+            margin: 20px 0px;
+            line-height: 1.6;
+        }
+    }
+
+}
+@media screen and (max-width:767px){
+    .win_section{
+        padding: 30px 0px;
+        .win_content {
+            .title{
+                font-size: 1.8rem;
+                line-height: 1.4;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px){
+    .win_section{
+        .win_content {
+            padding: 20px 0px;
+            .title{
+                width: auto;
+            }
+        }
+    }
+}

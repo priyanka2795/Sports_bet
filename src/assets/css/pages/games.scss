@@ -1,0 +1,156 @@
+.hr_div{
+    background: #0e0a0a;
+    color: #fff;
+}
+.available_games_section {
+    background-color: #0e0a0a;
+    padding: 80px 0px;
+    color: #fff;
+
+    h3 {
+        font-weight: 700;
+        font-size: 2.6rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Ubuntu', sans-serif;
+        text-shadow: 2px 2px 2px rgb(195 15 243 / 90%);
+        line-height: 1.7;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .mt-15{
+        margin-top: 3rem;
+    }
+
+    .available_games_content {
+
+        ul {
+            margin-left: -14px;
+            line-height: 1.6;
+        }
+    }
+}
+
+.favorite_games_section {
+    background-color: #0e0a0a;
+    padding: 80px 0px;
+    color: #fff;
+
+    .p_50 {
+        padding: 50px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 2.6rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Ubuntu', sans-serif;
+        text-shadow: 2px 2px 2px rgb(195 15 243 / 90%);
+        line-height: 1.7;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .lottery_img {
+        img {
+            border-radius: 50%;
+            width: 300px;
+            display: flex;
+            margin: auto;
+        }
+    }
+
+    .lottery_content {
+        padding: 70px 0px;
+    }
+
+    .arcade_img {
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .arcade_content {
+        padding: 50px 0px;
+    }
+
+    .keno_img {
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            // object-fit: cover;
+            display: block;
+            margin: 52px auto auto auto;
+        }
+    }
+
+    .keno_content {
+        padding: 50px 0px;
+    }
+
+    .favorite_games_content {
+
+        ol {
+            margin-left: -14px;
+            line-height: 1.6;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    .available_games_section {
+        .available_game_img {
+            img {
+                width: 520px;
+                margin-top: 50px;
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width:767px){
+    .available_games_section{
+        padding: 30px 0px;
+            h3{
+                font-size: 1.8rem;
+                line-height: 1.4;
+            }
+            .mt-15{
+                margin-top: 0rem;
+            }
+    }
+    .favorite_games_section{
+        padding: 30px 0px;
+            h3{
+                font-size: 1.8rem;
+                line-height: 1.4;
+            }
+            .p_50 {
+                padding: 0px;
+            }
+            .lottery_img {
+                img {
+                    width: 240px;
+                 }
+            }
+            .arcade_img {
+                img {
+                    width: 240px;
+                    height: 240px;
+                 }
+            }
+            .keno_img {
+                img {
+                    width: 240px;
+                    height: 240px;
+                 }
+            }
+    }
+}
